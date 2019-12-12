@@ -62,8 +62,8 @@ Param (
     $CreateSelfSignedCert = $true,
     [switch]$ForceNewSSLCert,
     [switch]$GlobalHttpFirewallAccess,
-    [switch]$DisableBasicAuth = $false,
-    [switch]$EnableCredSSP
+    [switch]$DisableBasicAuth = $true,
+    [switch]$EnableCredSSP = $true
 )
 
 Function Write-Log
